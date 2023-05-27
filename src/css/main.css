@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color:#1715a279!important;
+
+body {
+    background-color: #1715a279 !important;
 }
 
 .navbar {
@@ -15,7 +16,7 @@ body{
     border-radius: 12px;
     display: flex;
     justify-content: center;
-    background-color:#200e12;
+    background-color: #200e12;
     position: fixed !important;
     top: 0;
     left: 0;
@@ -23,7 +24,7 @@ body{
 }
 
 .list {
-    display: flex!important;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     width: 80%;
@@ -36,7 +37,8 @@ body{
     font-size: 30px;
     transition: 0.5s ease all;
 }
-.list>a:hover{
+
+.list>a:hover {
     color: #9b6660;
 }
 
@@ -127,8 +129,8 @@ body{
     opacity: 0.6;
 }
 
-.section_flex{
-    display: flex!important;
+.section_flex {
+    display: flex !important;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -192,9 +194,82 @@ body{
 
 }
 
+.messages {
+    height: 60vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b95a7066;
+    gap: 20px;
+}
+
+.formname {
+    height: 50px;
+    padding: 5px;
+    border-radius: 12px;
+    outline: none;
+    width: 24%;
+    box-shadow: 2px 3px 3px 4px cornflowerblue;
+    border: 1px solid blue;
+}
+
+.infoinputs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mobil {
+    height: 50px;
+    padding: 5px;
+    border-radius: 12px;
+    outline: none;
+    width: 24%;
+    border: 1px solid blue;
+    box-shadow: 2px 3px 3px 4px cornflowerblue;
+}
+
+.message {
+    resize: both;
+    overflow: auto;
+    height: 90px;
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid blue;
+    box-shadow: 2px 3px 3px 4px cornflowerblue;
+}
+
 .contact {
     background-color: blue;
     height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+    align-items: center;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.icones>p {
+    font-size: 35px;
+}
+
+.icones p>a {
+    color: rgb(0, 255, 174);
+}
+
+.sosial {
+    font-size: 20px;
+    color: wheat;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 .rigth {
@@ -213,8 +288,9 @@ body{
     position: absolute;
     width: 50%;
 }
-.rigth>img{
-    width: 100%!important;
+
+.rigth>img {
+    width: 100% !important;
     height: 100%;
 }
 
@@ -224,8 +300,8 @@ body{
     font-style: italic;
 }
 
-.card {
-    transition: 0.5s ease width;
+.infos ul>li {
+    font-size: 20px;
 }
 
 
@@ -233,17 +309,6 @@ body{
     height: 250px !important;
 }
 
-
-@media only screen and (max-width: 980px) {
-    .list a {
-        display: none;
-
-    }
-
-    #btn {
-        display: block;
-    }
-}
 @media only screen and (max-width: 980px) {
     .list a {
         display: none;
@@ -254,34 +319,30 @@ body{
         display: block;
         margin: 0 auto;
     }
-    .left{
+
+    .left {
 
         height: auto;
-        width: 100%!important;
-    
+        width: 100% !important;
+
     }
-    .section{
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-    }
-    .rigth{
+
+    .rigth {
         height: auto;
         top: 0;
         width: 100%;
     }
-    .active{
-        flex-direction: row!important;
+
+    .active {
+        flex-direction: row !important;
         flex-wrap: wrap;
         height: auto;
-        margin-bottom:  auto;
+        margin-bottom: auto;
     }
-    .section_flex{
-    
-        flex-wrap: wrap!important;
-    }
+
 }
-@media only screen and (max-width:780px){
+
+@media only screen and (max-width:480px) {
     .list a {
         display: none;
 
@@ -291,23 +352,37 @@ body{
         display: block;
         margin: 0 auto;
     }
-    .left{
+
+    .left {
 
         height: auto;
-        width: 100%!important;
-    
+        width: 100% !important;
+
     }
-    .section{
+
+    .section_flex {
         flex-direction: column;
     }
-    .rigth{
+.section{
+    flex-direction: column!important;
+}
+    .rigth {
         height: auto;
         top: 0;
         width: 100%;
     }
-    .active{
-        flex-direction: row!important;
+
+    .active {
+        flex-direction: row !important;
         flex-wrap: wrap;
+        height: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .contact {
+        flex-direction: column;
         height: auto;
     }
 }
