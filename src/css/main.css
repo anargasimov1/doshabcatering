@@ -6,6 +6,7 @@
     margin: 0 auto; */
 }
 
+
 body {
     background-color: #1715a279 !important;
 }
@@ -348,10 +349,13 @@ body {
         align-items: center;
     }
     .mobil{
-        width: 50%;
+        width: 90%;
     }
     .formname{
-        width: 50%;
+        width: 90%;
+    }
+    .message{
+        width:90%;
     }
 
     #btn {
