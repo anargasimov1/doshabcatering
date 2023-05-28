@@ -1,5 +1,5 @@
 "use strict";
-
+//    index.html
 const title2 = document.getElementById("title2"),
     title1 = document.getElementById("title1"),
     btn_open = document.getElementById("btn"),
@@ -21,6 +21,10 @@ setInterval(() => {
 
 btn_open.addEventListener("click", () => navbar.style.width = "100%")
 
-btn_close.addEventListener("click",()=>{
+btn_close.addEventListener("click", () => {
     navbar.style.width = "0"
 })
+
+//        about.html
+
+
