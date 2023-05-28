@@ -52,22 +52,19 @@ body {
     align-items: center;
 }
 
-#btn_about {
-    font-size: 35px;
+.btn-dark {
+    font-size: 40px;
     border-radius: 12px;
-    font-size: 35px;
     transform: translateY(-50%);
     top: 50%;
-    display: none !important;
+    display: none!important;
     width: 50px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
     position: absolute;
     right: 20px;
-    display: flex!important;
-    align-items: center;
-    justify-content: center;
+    height: 50px;
 }
 
 .logo img {
@@ -81,9 +78,12 @@ body {
 .navbar {
     height: 100vh;
     z-index: 20;
-    position: fixed;
+    position: fixed!important;
     background-color:#ab3d84;
     display: none!important;
+    left: 0;
+    top: 0;
+    width: 100%;
 
 
 }
@@ -95,6 +95,7 @@ body {
     align-items: center;
     width: 90%;
     gap: 20px;
+    padding-top: 200px;
 }
 .navbar ul li>a {
     font-size: 30px;
